@@ -9,7 +9,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $app = AppFactory::create();
 
 $app->get('/', function (Request $request, Response $response, array $args) {
-    $response->getBody()->wrte('index!');
+    $response->getBody()->write('index!');
     return $response;
 });
 
