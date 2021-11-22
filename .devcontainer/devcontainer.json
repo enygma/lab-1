@@ -1,3 +1,5 @@
 {
-    "build": { "dockerfile": "Dockerfile" }
+    "build": { "dockerfile": "Dockerfile" },
+    "forwardPorts": [8000],
+    "postStartCommand": "composer install; php -S localhost:8080"
 }
